@@ -1,9 +1,4 @@
-
-
-
-  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-
-
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 %%[
     set @origin = HTTPRequestHeader("Referer")
     set @domain = "exacttarget"
@@ -24,9 +19,6 @@
     Platform.Response.SetResponseHeader("Content-Security-Policy","default-src 'self'");
 </script>
 %%[
-
-
-
 if length(@match) > 0 then  
 
     var @name 
@@ -49,6 +41,4 @@ if length(@match) > 0 then
     redirect(concat(cloudPagesUrl(9087,'formCompletionStatus',@formCompletionStatus,'name',@name,'age',@age,'errors',@errors)))
 
 endif
-
 ]%%
-
